@@ -1,1 +1,13 @@
-404 Error - Page Not Found
+{% extends '__base_ui__.html' %}
+
+{% block title %}{{ gettext('Network of Innovators') }}{% endblock %}
+{% block body_class %}b-landing-page{% endblock %}
+
+{% block content %}
+  <section class="b-homepage-panel b-categories"> 
+  <!-- temp class for mock up -->
+      <h1 style="text-align:center">Page Not Found</h1>
+      <p style="text-align:center">Sorry, but the page you are trying to view does not exist.</p>
+  </section>
+
+{% endblock %}
