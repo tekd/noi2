@@ -2,13 +2,19 @@
   background-color: $blue;
   text-align: center;
   text-transform: uppercase;
-  padding: 4em;
-  h2,h4 {
-    color: rgba(255, 255, 255, .8);
+  padding-top: 4em;
+  h2,h3,h4 {
+    color: $white-80;;
+    padding: .5em;
   }
 }
 
 .error-page-icon { 
-  color: rgba(255, 255, 255, .8);
+  color: $white-80;;
   font-size: 4em;
    }
+
+.e-error-display a {
+  color: $white-90;
+  font-weight: bold;
+}
