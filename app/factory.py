@@ -29,6 +29,7 @@ from slugify import slugify
 import yaml
 import json
 import os
+import error_handlers
 
 
 # App config vars that are exposed to client-side JavaScript code.
@@ -67,6 +68,11 @@ def create_app(config=None): #pylint: disable=too-many-statements
     Create an instance of the app.
     '''
     app = Flask(__name__)
+
+    '''
+    add error page handling
+    '''
+    app.register_blueprint(error_handlers.blueprint)
 
     with open('/noi/app/config/config.yml', 'r') as config_file:
         app.config.update(yaml.load(config_file))
