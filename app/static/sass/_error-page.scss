@@ -1,0 +1,14 @@
+.e-error-display {
+  background-color: $blue;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 4em;
+  h2,h4 {
+    color: rgba(255, 255, 255, .8);
+  }
+}
+
+.error-page-icon { 
+  color: rgba(255, 255, 255, .8);
+  font-size: 4em;
+   }
