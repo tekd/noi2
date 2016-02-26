@@ -48,3 +48,4 @@ def send_static_asset(path):
 
     return send_from_directory('/noi/app/templates/style-guide/static',
                                path)
+
