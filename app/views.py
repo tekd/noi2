@@ -787,10 +787,3 @@ def invite():
             flash(gettext("Your form submission was invalid."), "error")
 
     return render_template('invite.html', form=form)
-
-@views.app_errorhandler(404)
-def page_not_found(e):
-    '''
-    render custom page for 404 errors
-    '''
-    return render_template('404.html'), 404
